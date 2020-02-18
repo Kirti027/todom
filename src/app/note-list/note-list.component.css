@@ -1,0 +1,24 @@
+body {
+    background-image: url('back.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+  
+    height: 700px;
+  }
+/*.container {
+	width:459px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  }*/
+  .space {
+    padding: 5px;
+    margin-left: 10px;
+}
+td,th{
+color: cornsilk;
+}
+

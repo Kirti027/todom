@@ -1,0 +1,26 @@
+<body>
+    <div class="space">
+        <button type="button" routerLink="/create-note" class="btn btn-primary">Create-Note</button>&nbsp;
+        <button type="button" routerLink="/note-list" class="btn btn-primary">Note-List</button>
+    </div>
+    <div class="container col-sm-5">
+            <h3 style="color:blueviolet;margin-bottom: 20px;">Create Note</h3>
+           
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="title" id="title" placeholder="Topic" [(ngModel)]="title"/>
+                </div>
+    
+                <div class="form-group width">
+                    <input type="text" class="form-control" name="content" id="content" placeholder="Message" [(ngModel)]="content"/>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" (click)="createnote()">Create</button>
+                </div>
+    
+            </form>
+        
+    </div>
+    </body>
+    

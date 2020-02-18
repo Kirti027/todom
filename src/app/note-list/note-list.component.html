@@ -1,0 +1,28 @@
+<body>
+    <div class="space">
+            <button type="button" routerLink="/create-note" class="btn btn-primary">Create-Note</button>&nbsp;
+            <button type="button" routerLink="/note-list" class="btn btn-primary">Note-List</button>
+        </div>
+    <div class="container">
+            <h3 style="color:blueviolet;margin-bottom: 20px;text-align: center;">Note List</h3>
+            <table class="table table-bordered table-sm">
+                    <thead>
+                      <tr>
+                        <th>Topic</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let post of postdata">
+                        <td>{{post.title}}</td>
+                        <td>{{post.content}}</td>
+                        <td><button class="btn btn-success" routerLink="/update/{{post._id}}" (click)="update(post)" type="button" >Edit</button>&nbsp;&nbsp;
+                            <button class="btn btn-danger" (click)="delete(post._id)">Delete</button>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+            </table>
+    </div>
+    </body>
